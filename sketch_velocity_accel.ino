@@ -9,10 +9,6 @@ float prevFilteredX = 0, prevFilteredY = 0, prevFilteredZ = 0;
 float fs = 119.0;  // サンプリング周波数 (Hz)
 float deltaTime = 1.0 / fs; 
 
-// 上端
-int up = 20;
-// 下端
-int down = -10;
 
 // ハイパスフィルタ関数（重力成分除去）
 float highPassFilter(float currentValue, float &gravityValue, float alpha) {
