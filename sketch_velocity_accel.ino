@@ -70,6 +70,7 @@ void loop() {
     // 絶対速度を計算
     float absolute_velocity = sqrt(velocityX * velocityX + velocityY * velocityY + velocityZ * velocityZ);
 
+    //Processing Grapherで描画させるための形式にして出力
     Serial.print(filteredX, 2);
     Serial.print(",");
     Serial.print(filteredY, 2);
